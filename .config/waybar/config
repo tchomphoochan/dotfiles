@@ -9,7 +9,7 @@
     "margin-left": 8,
 
     "modules-left": [
-        "sway/workspaces"
+        "hyprland/workspaces"
     ],
 
     "modules-center": [
@@ -18,19 +18,12 @@
 
     "modules-right": [
         "tray",
-        "cpu_text",
         "cpu",
         "memory",
         "battery",
         "network",
-        "pulseaudio"
+        "wireplumber"
     ],
-
-    "sway/workspaces": {
-        "disable-scroll": true,
-        "all-outputs": true,
-        "tooltip": false
-    },
 
     "tray": {
         "spacing": 10,
@@ -71,10 +64,17 @@
     },
 
     "network": {
-        "format-wifi" : "wifi {bandwidthDownBits}",
-        "format-ethernet": "enth {bandwidthDownBits}",
+        "format-wifi" : "{essid} {bandwidthDownBits}",
+        "format-ethernet": "{ifname} {bandwidthDownBits}",
         "format-disconnected" : "no network",
         "interval": 5,
-        "tooltip": false
+        "tooltip": true,
+        "tooltip-format": "{ipaddr}, down {bandwidthDownBits}, up {bandwidthUpBits}",
+    },
+
+    "wireplumber": {
+        "format": "vol {volume}%",
+        "format-muted": "vol muted",
+        "on-click": "helvum"
     }
 }

@@ -24,7 +24,7 @@ tooltip {
 #memory,
 #battery,
 #network,
-#pulseaudio {
+#wireplumber {
     margin: 6px 6px 6px 0px;
     padding: 2px 8px;
 }
@@ -43,12 +43,9 @@ tooltip {
     color: #c7ab7a;
 }
 
-#workspaces button.focused {
-    color: #ddc7a1;
-}
-
-#workspaces button.urgent {
-    background-color: #e78a4e;
+#workspaces button.active {
+    color: #1d2021;
+    background-color: #ddc7a1;
 }
 
 #clock {
@@ -62,16 +59,11 @@ tooltip {
     border: 2px solid #c7ab7a;
 }
 
-#battery {
-    background-color: #a9b665;
-    border: 2px solid #c7ab7a;
-    color: #6c782e;
-}
-
 #cpu,
 #memory,
 #network,
-#pulseaudio {
+#battery,
+#wireplumber {
     background-color: #ddc7a1;
     border: 2px solid #c7ab7a;
     color: #1d2021;
