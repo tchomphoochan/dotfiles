@@ -9,7 +9,8 @@
     "margin-left": 8,
 
     "modules-left": [
-        "hyprland/workspaces"
+        "hyprland/workspaces",
+        "tray"
     ],
 
     "modules-center": [
@@ -17,10 +18,10 @@
     ],
 
     "modules-right": [
-        "tray",
         "cpu",
         "memory",
         "battery",
+        "temperature",
         "network",
         "wireplumber"
     ],
@@ -40,6 +41,7 @@
         "interval": 2,
 
         "states": {
+            "warning": 80,
             "critical": 90
         }
     },
@@ -49,7 +51,8 @@
         "interval": 2,
 
         "states": {
-            "critical": 80
+            "warning": 80,
+            "critical": 90
         }
     },
 
@@ -76,5 +79,11 @@
         "format": "vol {volume}%",
         "format-muted": "vol muted",
         "on-click": "helvum"
+    },
+
+    "temperature": {
+        "warning-threshold": 70,
+        "critical-threshold": 80,
+        "format": "{temperatureC}°C"
     }
 }

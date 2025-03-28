@@ -21,6 +21,7 @@ tooltip {
 #clock,
 #tray,
 #cpu,
+#temperature,
 #memory,
 #battery,
 #network,
@@ -31,7 +32,7 @@ tooltip {
 
 #workspaces {
     background-color: #303536;
-    margin: 6px 0px 6px 6px;
+    margin: 6px 6px 6px 6px;
     border: 2px solid #434a4c;
 }
 
@@ -63,23 +64,24 @@ tooltip {
 #memory,
 #network,
 #battery,
+#temperature,
 #wireplumber {
     background-color: #ddc7a1;
     border: 2px solid #c7ab7a;
     color: #1d2021;
 }
 
-#cpu.critical,
-#memory.critical {
-    background-color: #ddc7a1;
-    border: 2px solid #c7ab7a;
+#cpu.warning,
+#memory.warning,
+#battery.warning,
+#temperature.warning {
     color: #c14a4a;
 }
 
-#battery.warning,
+#cpu.critical,
+#memory.critical,
 #battery.critical,
-#battery.urgent {
-    background-color: #ddc7a1;
-    border: 2px solid #c7ab7a;
-    color: #c14a4a;
+#temperature.critical {
+    color: #aa0000;
+    font-weight: bold;
 }
