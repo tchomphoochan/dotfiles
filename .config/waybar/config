@@ -60,7 +60,7 @@
             "warning": 20,
             "critical": 10
         },
-        "tooltip": false
+        "tooltip": true
     },
 
     "network": {
