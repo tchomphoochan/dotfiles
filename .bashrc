@@ -35,7 +35,7 @@ function set_prompt() {
     fi
 
     # Set the PS1 prompt
-    PS1="${BLUE}\u@\h:${WHITE}\w${PURPLE}\$(parse_git_branch) ${PROMPT_SYMBOL} ${RESET}"
+    PS1="${BLUE}\h:${WHITE}\w${PURPLE}\$(parse_git_branch) ${PROMPT_SYMBOL} ${RESET}"
 }
 PROMPT_COMMAND=set_prompt;
 
