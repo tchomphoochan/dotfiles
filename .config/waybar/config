@@ -77,8 +77,7 @@
 
     "wireplumber": {
         "format": "vol {volume}%",
-        "format-muted": "vol muted",
-        "on-click": "helvum"
+        "format-muted": "vol muted"
     },
 
     "temperature": {
