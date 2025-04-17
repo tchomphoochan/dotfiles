@@ -7,9 +7,8 @@ return {
         "vimdoc", "javascript", "typescript", "c", "cpp", "lua", "rust",
         "jsdoc", "bash", "python", "ruby", "java", "scala"
       },
-
       sync_install = false,
-      auto_install = true,
+      auto_install = false,
 
       indent = {
         enable = true
