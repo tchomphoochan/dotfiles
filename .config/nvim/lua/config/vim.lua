@@ -15,6 +15,7 @@ vim.opt.smartindent = true
 vim.opt.cursorline = true
 vim.opt.wrap = false
 vim.opt.termguicolors = true
+vim.opt.scrolloff = 5
  
 -- search
 vim.opt.smartcase = true
