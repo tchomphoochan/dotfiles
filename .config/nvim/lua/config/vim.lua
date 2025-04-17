@@ -1,5 +1,4 @@
 -- Vim options
-
 vim.cmd.colorscheme("tokyonight")
 
 -- line number
@@ -21,3 +20,7 @@ vim.opt.termguicolors = true
 vim.opt.smartcase = true
 vim.opt.hlsearch = true
 vim.opt.incsearch = true
+
+-- window splits
+vim.opt.splitbelow = true
+vim.opt.splitright = true
