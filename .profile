@@ -23,3 +23,11 @@ export LD_LIBRARY_PATH="$HOME/.local/lib64:$LD_LIBARY_PATH"
 # XDG directories
 export XDG_CONFIG_HOME="$HOME/.config"
 
+# Default compilation flags
+export MAKEFLAGS="-j8"
+
+# Bluespec stuff
+export BSPATH=/opt/bluespec
+export PATH="$BSPATH/bin:$PATH"
+export BLUESPECDIR=$BSPATH/lib/
+export EMAIL=tcpc@mit.edu
