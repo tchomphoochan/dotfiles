@@ -25,3 +25,6 @@ vim.opt.incsearch = true
 -- window splits
 vim.opt.splitbelow = true
 vim.opt.splitright = true
+
+-- clipbaord
+vim.opt.clipboard = "unnamedplus"
