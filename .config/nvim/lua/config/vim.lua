@@ -28,3 +28,14 @@ vim.opt.splitright = true
 
 -- clipbaord
 vim.opt.clipboard = "unnamedplus"
+
+-- no, thanks, ftplugin
+vim.g.python_recommended_style = false
+vim.g.rust_recommended_style = false
+vim.g.go_recommended_style = false
+vim.g.ruby_recommended_style = false
+vim.g.zig_recommended_style = false
+vim.g.markdown_recommended_style = false
+vim.g.meson_recommended_style = false
+vim.g.arduino_recommended_style = false
+vim.g.sass_recommended_style = false
