@@ -31,3 +31,5 @@ export BSPATH=/opt/bluespec
 export PATH="$BSPATH/bin:$PATH"
 export BLUESPECDIR=$BSPATH/lib/
 export EMAIL=tcpc@mit.edu
+export CONNECTALDIR=/usr/share/connectal
+
