@@ -11,7 +11,7 @@ set expandtab
 set smartindent
  
 " visuals
-colorscheme ron
+colorscheme desert
 set nowrap
 set scrolloff=5
 
