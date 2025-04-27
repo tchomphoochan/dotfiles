@@ -148,17 +148,14 @@ return {
         return flags, 'treewalk'
       end
 
+      -- Default detection order (without forcing):
       local compile_commands = find_compile_commands(root)
       if compile_commands then
         cache[root] = { flags = {}, mode = 'compile_commands.json' }
         return {}, 'compile_commands.json'
       end
 
-      local flags, mode = get_make_flags(root)
-      if #flags == 0 then
-        flags, mode = scan_headers_sources(root)
-      end
-
+      local flags, mode = scan_headers_sources(root)
       cache[root] = { flags = flags, mode = mode }
       return flags, mode
     end
