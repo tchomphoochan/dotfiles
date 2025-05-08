@@ -16,6 +16,7 @@ vim.opt.cursorline = true
 vim.opt.wrap = false
 vim.opt.termguicolors = true
 vim.opt.scrolloff = 5
+vim.opt.signcolumn = "yes"
  
 -- search
 vim.opt.smartcase = true
