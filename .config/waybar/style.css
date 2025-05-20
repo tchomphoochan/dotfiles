@@ -71,7 +71,8 @@ tooltip {
     color: #1d2021;
 }
 
-#battery.charging {
+#battery.charging,
+#battery.plugged {
     background-color: #a9b665;
     border: 2px solid #c7ab7a;
     color: #6c782e;
