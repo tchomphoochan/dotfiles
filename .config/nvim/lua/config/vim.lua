@@ -3,6 +3,7 @@ vim.cmd.colorscheme("tokyonight")
 
 -- line number
 vim.opt.number = true
+vim.opt.relativenumber = true
  
 -- tabs
 vim.opt.tabstop = 2
