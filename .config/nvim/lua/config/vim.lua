@@ -41,3 +41,7 @@ vim.g.markdown_recommended_style = false
 vim.g.meson_recommended_style = false
 vim.g.arduino_recommended_style = false
 vim.g.sass_recommended_style = false
+
+-- disable comment wrapping/newline
+vim.cmd("autocmd BufEnter * set formatoptions-=cro")
+vim.cmd("autocmd BufEnter * setlocal formatoptions-=cro")
