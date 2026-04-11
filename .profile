@@ -12,6 +12,10 @@ alias ls='ls --color=auto'
 alias ll='ls -alF'
 alias grep='grep --color=auto'
 
+alias gcmp='git checkout main && git pull'
+alias gcb='git checkout -b'
+alias gcm='git commit -m'
+
 # Add local paths
 export PATH="$HOME/.local/bin:$PATH"
 export CPATH="$HOME/.local/include:$CPATH"
