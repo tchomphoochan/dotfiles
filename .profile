@@ -37,3 +37,5 @@ export BLUESPECDIR=$BSPATH/lib/
 export EMAIL=tcpc@mit.edu
 export CONNECTALDIR=/usr/share/connectal
 
+# C# stuff
+export PATH="$HOME/.dotnet/tools:$PATH"
