@@ -9,7 +9,7 @@ umask 0077
 
 # Useful shortcuts
 alias ls='ls --color=auto'
-alias ll='ls -alF'
+alias ll='ls -alFh'
 alias grep='grep --color=auto'
 
 alias gcmp='git checkout main && git pull'
@@ -19,9 +19,9 @@ alias gcm='git commit -m'
 # Add local paths
 export PATH="$HOME/.local/bin:$PATH"
 export CPATH="$HOME/.local/include:$CPATH"
-export LIBRARY_PATH="$HOME/.local/lib:$LIBRARY_PATH"
+export LIBRARY_PATH="$HOME/.local/lib"
 export LIBRARY_PATH="$HOME/.local/lib64:$LIBRARY_PATH"
-export LD_LIBRARY_PATH="$HOME/.local/lib:$LD_LIBRARY_PATH"
+export LD_LIBRARY_PATH="$HOME/.local/lib"
 export LD_LIBRARY_PATH="$HOME/.local/lib64:$LD_LIBRARY_PATH"
 
 # XDG directories
