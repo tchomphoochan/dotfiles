@@ -1,6 +1,22 @@
 -- Set map leader to space
 vim.g.mapleader = " "
 
+-- Global Keybindings (Available everywhere)
+local map = vim.keymap.set
+local opts = { noremap = true, silent = true }
+
+-- Window navigation
+map('n', '<leader>wh', '<C-w>h', opts)
+map('n', '<leader>wj', '<C-w>j', opts)
+map('n', '<leader>wk', '<C-w>k', opts)
+map('n', '<leader>wl', '<C-w>l', opts)
+
+-- Window management
+map('n', '<leader>ws', '<C-w>s', opts) -- Split horizontally
+map('n', '<leader>wv', '<C-w>v', opts) -- Split vertically
+map('n', '<leader>wc', '<C-w>c', opts) -- Close window
+map('n', '<leader>wo', '<C-w>o', opts) -- Close others
+
 -- Add keybindings to the attached LSP
 vim.api.nvim_create_autocmd("LspAttach", {
     callback = function(e)
@@ -26,9 +42,9 @@ vim.api.nvim_create_autocmd("LspAttach", {
           else
             vim.lsp.buf.declaration()
           end
-        end, { desc = "Jump between declaration/definition" })
-        vim.keymap.set("n", "<leader>o", "<C-o>", { desc = "Jump back in jumplist" })
-        vim.keymap.set("n", "<leader>i", "<C-i>", { desc = "Jump forward in jumplist" })
+        end, { buffer = e.buf, desc = "Jump between declaration/definition" })
+        vim.keymap.set("n", "<leader>o", "<C-o>", { buffer = e.buf, desc = "Jump back in jumplist" })
+        vim.keymap.set("n", "<leader>i", "<C-i>", { buffer = e.buf, desc = "Jump forward in jumplist" })
 
 
     end
